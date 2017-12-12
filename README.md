@@ -6,32 +6,36 @@ Contains two variants of a program to compute the packet count:
 2. Optimized implementation returning an approximate count (within a specific bound) using a probablistic algorithm/data structure (count-min sketch)
 
 
-##Directory Layout
+## Directory Layout
 
 .
-├── data ... Contains packet dumps for offline analysis
-│   
-├── helper ... Helper functions used during development
-│   
-├── plots ... Plots of frequency distributions of packet flows
-│   
-├── TaskOne ... Variant One (using a simple hash table to compute exact count)
-│   ├── a.out
-│   ├── HIST_FILE.txt ... Stores frequencies of unique flow tuples 
-│   ├── packet_analysis.cc
-│   ├── packet_analysis.h
-│   ├── plot_hist.py ... Generates frequency distribution plots from HIST_FILE
-│   └── profiling ... Valgrind massif memory profiling
-└── TaskTwo ... Variant Two (optimized using a count-min sketch, returns approximate count within bounds)
-    ├── a.out
-    ├── count_min_sketch.cc
-    ├── count_min_sketch.h
-    ├── FLOW_FILE.txt ... Stores the unique flow tuples (generated from TaskOne)
-    ├── packet_analysis.cc
-    ├── packet_analysis.h
-    └── profiling
+|-- data ... Contains packet dumps for offline analysis
+|   |-- http.cap
+|   |-- lbl.pcap
+|   `-- mb.pcap
+|
+|-- helper ... Helper functions used during development
+|   
+|-- plots ... Plots of frequency distributions of packet flows
+|   
+|-- TaskOne ... Variant One (using a simple hash table to compute exact count)
+|   |-- a.out
+|   |-- HIST_FILE.txt ... Stores frequencies of unique flow tuples
+|   |-- packet_analysis.cc
+|   |-- packet_analysis.h
+|   |-- plot_hist.py ... Generates frequency distribution plots from HIST_FILE
+|   `-- profiling ... Valgrind massif memory profiling
+|
+`-- TaskTwo ... Variant Two (optimized using a count-min sketch, returns approximate count within bounds)
+    |-- a.out
+    |-- count_min_sketch.cc
+    |-- count_min_sketch.h
+    |-- FLOW_FILE.txt
+    |-- packet_analysis.cc
+    |-- packet_analysis.h
+    `-- profiling ... Stores the unique flow tuples (generated from TaskOne)
 
-##Basic Usage
+## Basic Usage
 Note: Significance of generated files is specified in the directory layout section
 1. Compile and run the TaskOne/packet_analysis.cc
 ```Bash
@@ -46,7 +50,7 @@ g++ packet_analysis.cc count_min_sketch.cc -lpcap
 ```
 4. This will generate the count-min sketch (by analyzing packets from the input data file), and then estimate the frequency by reading in unique tuples from FLOW_FILE (generated in TaskOne to avoid having to manually enter flow tuples during the estimation phase).
 
-##Advanced Usage (Profiling)
+## Advanced Usage (Profiling)
 1. To profile the memory usage (heap) of the two variants using Valgrind
 ```Bash
 valgrind --tool=massif ./a.out [NAME OF DATA FILE]
@@ -60,7 +64,7 @@ ms_print massif.out.pid file
 ms_print massif.out.pid | head -n 35
 ```
 
-##Future Work
+## Future Work
 1. Generate a frequency distribution plot for flow counts using HIST_FILE
 ```Bash
 python hist_plot.py
