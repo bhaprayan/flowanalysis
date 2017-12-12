@@ -116,6 +116,20 @@ Flow: (128.3.45.128,62334,208.233.189.150,80) Estimate: 16
 python hist_plot.py
 ```
 2. Depending on the degree of skewness, choose which algorithm to run (either CMS or X). CMS has been observed to have better performance in skewed distributions, whereas X is better for non-skewed distributions.
+3. Generating frequency distribution for the sample datasets in the repository results in the following plots
+
+###### lbl.pcap Flow Frequency Distribution
+![lbl.pcap Flow Frequency Distribution](https://raw.githubusercontent.com/bhaprayan/PacketFlowAnalysis/master/plots/lbl_pcap_hist.png)
+
+###### http.pcap Flow Frequency Distribution
+![http.pcap Flow Frequency Distribution](https://raw.githubusercontent.com/bhaprayan/PacketFlowAnalysis/master/plots/http_pcap_hist.png)
+
+###### mb.pcap Flow Frequency Distribution
+![mb.pcap Flow Frequency Distribution](https://raw.githubusercontent.com/bhaprayan/PacketFlowAnalysis/master/plots/mb_pcap_hist.png)
+
+These preliminary plots suggest that CMS is well suited for these datasets.
+
+Note: Need to find datasets with non-skewed flow frequency distributions, to test results.
 
 ## References
 * http://dimacs.rutgers.edu/~graham/pubs/papers/cm-full.pdf
