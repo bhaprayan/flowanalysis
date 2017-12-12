@@ -71,7 +71,7 @@ The following are preliminary results when the two variants are tested using a s
 
 ###### Valgrind Massif Generated Graph
 
-![MIPS vs Memory for First Variant (Vanilla Hash Map)](https://raw.githubusercontent.com/bhaprayan/PacketFlowAnalysis/master/assets/img/TaskOne_LBL_Profiling.png)
+![MIPS vs Memory for First Variant (Vanilla Hash Map)](https://raw.githubusercontent.com/bhaprayan/PacketFlowAnalysis/master/assets/img/TaskOne_LBL_Memory_Profile.png)
 
 As evident, the hash map has a larger memory footprint (which increases during execution) 
 
