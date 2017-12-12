@@ -115,7 +115,7 @@ Flow: (128.3.45.128,62334,208.233.189.150,80) Estimate: 16
 ```Bash
 python hist_plot.py
 ```
-2. Depending on the degree of skewness, choose which algorithm to run (either CMS or X). CMS has been observed to have better performance in skewed distributions, whereas X is better for non-skewed distributions.
+2. Depending on the degree of skewness, choose which algorithm to run (either CMS or similar algorithm such as Fast-AGMS). CMS has been observed to have better performance in skewed distributions, whereas Fast-AGMS is better for non-skewed distributions
 3. Generating frequency distribution for the sample datasets in the repository results in the following plots
 
 ###### lbl.pcap Flow Frequency Distribution
@@ -134,5 +134,5 @@ Note: Need to find datasets with non-skewed flow frequency distributions, to tes
 ## References
 * http://dimacs.rutgers.edu/~graham/pubs/papers/cm-full.pdf
 * https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch#cite_note-goyal-5
-* http://www.aclweb.org/anthology/D12-1100
 * http://web.stanford.edu/class/cs168/l/l2.pdf
+* http://webdocs.cs.ualberta.ca/~drafiei/papers/cmm.pdf
