@@ -64,6 +64,10 @@ ms_print massif.out.pid file
 ms_print massif.out.pid | head -n 35
 ```
 
+## Results
+The following are preliminary results when the two variants are tested using a sample packet dump file (LBL dataset)
+![MIPS vs Memory for First Variant (Vanilla Hash Map)](https://raw.github.com/bhaprayan/PacketFlowAnalysis/assets/img/TaskOne_LBL_Profiling.png)
+
 ## Future Work
 1. Generate a frequency distribution plot for flow counts using HIST_FILE
 ```Bash
@@ -72,10 +76,10 @@ python hist_plot.py
 2. Depending on the degree of skewness, choose which algorithm to run (either CMS or X). CMS has been observed to have better performance in skewed distributions, whereas X is better for non-skewed distributions.
 
 ##References
-[1] http://dimacs.rutgers.edu/~graham/pubs/papers/cm-full.pdf
-[2] https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch#cite_note-goyal-5
-[3] http://www.aclweb.org/anthology/D12-1100
-[4] http://web.stanford.edu/class/cs168/l/l2.pdf
+* http://dimacs.rutgers.edu/~graham/pubs/papers/cm-full.pdf
+* https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch#cite_note-goyal-5
+* http://www.aclweb.org/anthology/D12-1100
+* http://web.stanford.edu/class/cs168/l/l2.pdf
 
 
 Maybe use CMS for central router grids
