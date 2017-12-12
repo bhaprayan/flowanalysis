@@ -136,8 +136,3 @@ Note: Need to find datasets with non-skewed flow frequency distributions, to tes
 * https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch#cite_note-goyal-5
 * http://www.aclweb.org/anthology/D12-1100
 * http://web.stanford.edu/class/cs168/l/l2.pdf
-
-
-Maybe use CMS for central router grids
-
-The other algorithm for a client server architecture over the internet (Google, Bing, etc)
