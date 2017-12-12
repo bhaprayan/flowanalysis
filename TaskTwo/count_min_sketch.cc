@@ -11,8 +11,8 @@ using namespace std;
 // ep -> error 0.01 < ep < 1 (the smaller the better)
 // gamma -> probability for error (the smaller the better) 0 < gamm < 1
 CountMinSketch::CountMinSketch() {
-  eps = 0.1;
-  gamma = 0.1;
+  eps = 0.01;
+  gamma = 0.01;
   w = ceil(exp(1)/eps);
   d = ceil(log(1/gamma));
   total = 0;
