@@ -1,0 +1,880 @@
+desc: (none)
+cmd: ./a.out ../data/maccdc2012_00009.pcap
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=27795592
+mem_heap_B=87740
+mem_heap_extra_B=220
+mem_stacks_B=0
+heap_tree=detailed
+n5: 87740 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1404 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=27936932
+mem_heap_B=87648
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=75660620
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=101642226
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=127040602
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=158271085
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=186082284
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=208563138
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=229577400
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=250304495
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=271785772
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=292552815
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=314013976
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=334355296
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=354575829
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=376544318
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=396899290
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=418225276
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=433228752
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=458391630
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=478914468
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=520249864
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=545600310
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=597051500
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=597184400
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=643164664
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=643261304
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=689713210
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=690017363
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=736476228
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=736622566
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=790095130
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=detailed
+n5: 87679 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1343 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=790227568
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=838918491
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=839030063
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=887610619
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=887728511
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=934019665
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=934124565
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=973636665
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=973756503
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1020440976
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=detailed
+n5: 87679 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1343 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=1020537369
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1066962009
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1067084680
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1111333870
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1111465560
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1155771536
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1189419074
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1189521247
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=detailed
+n5: 87679 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1343 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=1223829193
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1223946528
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1268165650
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1268276362
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1328641090
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1328750402
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1377779953
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1377923802
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1419611369
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1458161667
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=detailed
+n5: 87679 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1343 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=1458298163
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1458398946
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1500867341
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1500998421
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1545657456
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1545763035
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1583369143
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1583465965
+mem_heap_B=87751
+mem_heap_extra_B=225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1680863744
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1681035505
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=detailed
+n5: 87679 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1343 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=1681203386
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1776975993
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1777075541
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1777178829
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1873973657
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=1874085492
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1874219271
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1958498999
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=1958858909
+mem_heap_B=87679
+mem_heap_extra_B=209
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=1994717273
+mem_heap_B=88672
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=detailed
+n5: 88672 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n1: 1024 0x5981DD6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:828)
+    n1: 1024 0x5980EB4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1339)
+     n1: 1024 0x59760A9: fwrite (iofwrite.c:39)
+      n1: 1024 0x517E58C: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+       n1: 1024 0x517E895: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+        n1: 1024 0x10AB4D: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+         n0: 1024 0x10AD58: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n0: 1312 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=81
+#-----------
+time=1994759520
+mem_heap_B=97542
+mem_heap_extra_B=274
+mem_stacks_B=0
+heap_tree=peak
+n7: 97542 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000185: ???
+       n0: 72704 0xFFF00018D: ???
+ n1: 8192 0x515CA96: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 8192 0x5160AA0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 8192 0x5160C4E: std::basic_ifstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+    n1: 8192 0x10ABB3: PCounter::estimate_cms() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 8192 0x10AD67: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 5440 0x10B51F: CountMinSketch::CountMinSketch() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+  n1: 5440 0x10A3CE: PCounter::PCounter() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n0: 5440 0x10AD30: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+        n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+   n1: 1024 0x5981DD6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:828)
+    n1: 1024 0x5980EB4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1339)
+     n1: 1024 0x59760A9: fwrite (iofwrite.c:39)
+      n1: 1024 0x517E58C: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+       n1: 1024 0x517E895: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+        n1: 1024 0x10AB4D: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+         n0: 1024 0x10AD58: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 4096 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 4096 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 4096 0x10AA5D: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+     n0: 4096 0x10AD49: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskTwo/a.out)
+ n1: 1104 0x597555B: __fopen_internal (iofopen.c:69)
+  n0: 1104 in 2 places, all below massif's threshold (1.00%)
+ n0: 886 in 6 places, all below massif's threshold (1.00%)

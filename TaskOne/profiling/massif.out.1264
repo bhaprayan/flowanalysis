@@ -1,0 +1,946 @@
+desc: (none)
+cmd: ./a.out ../data/lbl.pcap
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=21006173
+mem_heap_B=149260
+mem_heap_extra_B=1668
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=37112256
+mem_heap_B=151411
+mem_heap_extra_B=2309
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=49007261
+mem_heap_B=153527
+mem_heap_extra_B=3049
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=67510954
+mem_heap_B=155567
+mem_heap_extra_B=3489
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=76819689
+mem_heap_B=155910
+mem_heap_extra_B=3618
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=93116421
+mem_heap_B=160713
+mem_heap_extra_B=5487
+mem_stacks_B=0
+heap_tree=detailed
+n6: 160713 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 8680 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 8680 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 8680 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 8680 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 8680 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 8680 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 8680 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 8680 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 8680 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 8680 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 8680 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 8680 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 8680 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 5829 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 5829 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 5793 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 5793 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 5793 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 5793 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 5793 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 5793 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 5793 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 5793 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 5793 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 5793 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 5793 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 5793 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 5793 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 5793 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 36 in 1 place, below massif's threshold (1.00%)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n0: 2845 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=105149088
+mem_heap_B=162484
+mem_heap_extra_B=6132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=119682580
+mem_heap_B=162885
+mem_heap_extra_B=6283
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=140655513
+mem_heap_B=166633
+mem_heap_extra_B=7031
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=154426236
+mem_heap_B=167007
+mem_heap_extra_B=7169
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=172186412
+mem_heap_B=167383
+mem_heap_extra_B=7305
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=189955180
+mem_heap_B=168863
+mem_heap_extra_B=7873
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=206796509
+mem_heap_B=171007
+mem_heap_extra_B=8673
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=231315828
+mem_heap_B=172614
+mem_heap_extra_B=9242
+mem_stacks_B=0
+heap_tree=detailed
+n7: 172614 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 14840 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 14840 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 14840 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 14840 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 14840 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 14840 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 14840 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 14840 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 14840 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 14840 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 14840 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 14840 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 14840 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 9920 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 9920 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 9920 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 9920 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 9920 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 9920 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 9920 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 9920 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 9920 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 9920 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 9920 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 9920 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 9920 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 9920 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 9920 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 9920 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n1: 3272 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 3272 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 3272 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 3272 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 3272 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 3272 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 3272 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 3272 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 3272 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 3272 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 3272 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 3272 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 3272 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 3272 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 3272 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 3272 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n0: 1223 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=243707065
+mem_heap_B=172804
+mem_heap_extra_B=9308
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=260691350
+mem_heap_B=172994
+mem_heap_extra_B=9374
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=273082672
+mem_heap_B=173941
+mem_heap_extra_B=9707
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=288575869
+mem_heap_B=174315
+mem_heap_extra_B=9845
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=312523540
+mem_heap_B=175804
+mem_heap_extra_B=10364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=334058634
+mem_heap_B=177294
+mem_heap_extra_B=10938
+mem_stacks_B=0
+heap_tree=detailed
+n7: 177294 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 17584 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 17584 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 17584 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 17584 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 17584 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 17584 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 17584 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 17584 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 17584 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 17584 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 17584 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 17584 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 17584 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 11826 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 11826 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 11790 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 11790 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 11790 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 11790 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 11790 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 11790 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 11790 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 11790 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 11790 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 11790 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 11790 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 11790 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 11790 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 11790 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 36 in 1 place, below massif's threshold (1.00%)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n1: 3272 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 3272 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 3272 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 3272 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 3272 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 3272 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 3272 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 3272 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 3272 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 3272 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 3272 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 3272 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 3272 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 3272 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 3272 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 3272 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n0: 1253 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=348977977
+mem_heap_B=178699
+mem_heap_extra_B=11453
+mem_stacks_B=0
+heap_tree=detailed
+n7: 178699 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 18424 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 18424 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 18424 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 18424 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 18424 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 18424 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 18424 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 18424 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 18424 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 18424 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 18424 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 18424 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 18424 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 12391 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 12391 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 12352 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 12352 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 12352 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 12352 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 12352 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 12352 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 12352 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 12352 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 12352 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 12352 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 12352 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 12352 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 12352 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 12352 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 39 in 1 place, below massif's threshold (1.00%)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n1: 3272 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 3272 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 3272 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 3272 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 3272 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 3272 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 3272 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 3272 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 3272 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 3272 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 3272 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 3272 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 3272 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 3272 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 3272 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 3272 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n0: 1253 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=373757581
+mem_heap_B=179188
+mem_heap_extra_B=11628
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=390043599
+mem_heap_B=179627
+mem_heap_extra_B=11789
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=405054904
+mem_heap_B=180133
+mem_heap_extra_B=11963
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=429708874
+mem_heap_B=182488
+mem_heap_extra_B=12808
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=449143171
+mem_heap_B=183809
+mem_heap_extra_B=13279
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=467530237
+mem_heap_B=184624
+mem_heap_extra_B=13592
+mem_stacks_B=0
+heap_tree=detailed
+n7: 184624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 21952 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 21952 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 21952 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 21952 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 21952 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 21952 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 21952 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 21952 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 21952 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 21952 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 21952 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 21952 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 21952 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 14788 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 14788 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 14753 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 14753 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 14753 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 14753 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 14753 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 14753 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 14753 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 14753 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 14753 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 14753 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 14753 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 14753 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 14753 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 14753 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 35 in 1 place, below massif's threshold (1.00%)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n1: 3272 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 3272 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 3272 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 3272 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 3272 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 3272 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 3272 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 3272 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 3272 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 3272 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 3272 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 3272 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 3272 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 3272 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 3272 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 3272 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n0: 1253 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=482662966
+mem_heap_B=185286
+mem_heap_extra_B=13810
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=497802243
+mem_heap_B=185877
+mem_heap_extra_B=14027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=509612826
+mem_heap_B=189741
+mem_heap_extra_B=14243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=529792340
+mem_heap_B=191603
+mem_heap_extra_B=14941
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=549973927
+mem_heap_B=192146
+mem_heap_extra_B=15126
+mem_stacks_B=0
+heap_tree=detailed
+n7: 192146 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 24528 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 24528 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 24528 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 24528 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 24528 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 24528 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 24528 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 24528 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 24528 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 24528 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 24528 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 24528 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 24528 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 16483 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 16483 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 16483 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 16483 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 16483 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 16483 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 16483 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 16483 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 16483 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 16483 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 16483 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 16483 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 16483 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 16483 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 16483 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 16483 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 6584 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 6584 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 6584 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 6584 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 6584 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 6584 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 6584 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 6584 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 6584 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 6584 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 6584 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 6584 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 6584 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 6584 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 6584 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 6584 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n0: 1192 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=565111226
+mem_heap_B=192336
+mem_heap_extra_B=15192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=590339923
+mem_heap_B=193061
+mem_heap_extra_B=15451
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=615002006
+mem_heap_B=194152
+mem_heap_extra_B=15848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=635202461
+mem_heap_B=194501
+mem_heap_extra_B=15971
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=650354388
+mem_heap_B=194718
+mem_heap_extra_B=16050
+mem_stacks_B=0
+heap_tree=detailed
+n7: 194718 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 26040 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 26040 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 26040 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 26040 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 26040 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 26040 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 26040 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 26040 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 26040 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 26040 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 26040 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 26040 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 26040 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 17512 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 17512 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 17512 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 17512 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 17512 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 17512 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 17512 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 17512 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 17512 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 17512 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 17512 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 17512 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 17512 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 17512 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 17512 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 17512 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 6584 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 6584 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 6584 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 6584 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 6584 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 6584 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 6584 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 6584 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 6584 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 6584 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 6584 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 6584 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 6584 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 6584 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 6584 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 6584 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n0: 1223 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=670460209
+mem_heap_B=196600
+mem_heap_extra_B=16728
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=680565119
+mem_heap_B=197812
+mem_heap_extra_B=17180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=699384727
+mem_heap_B=199358
+mem_heap_extra_B=17770
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=709490887
+mem_heap_B=199579
+mem_heap_extra_B=17845
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=725034201
+mem_heap_B=199863
+mem_heap_extra_B=17945
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=750295417
+mem_heap_B=200243
+mem_heap_extra_B=18077
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=770503948
+mem_heap_B=200621
+mem_heap_extra_B=18211
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=790710466
+mem_heap_B=201001
+mem_heap_extra_B=18343
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=809341416
+mem_heap_B=201536
+mem_heap_extra_B=18536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=819451122
+mem_heap_B=202137
+mem_heap_extra_B=18743
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=834611747
+mem_heap_B=203085
+mem_heap_extra_B=19075
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=854152150
+mem_heap_B=221294
+mem_heap_extra_B=19386
+mem_stacks_B=0
+heap_tree=peak
+n8: 221294 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x50FC9BE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 72704 0x400F858: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x400F969: _dl_init (dl-init.c:30)
+    n1: 72704 0x4000C58: ??? (in /lib/x86_64-linux-gnu/ld-2.24.so)
+     n1: 72704 0x0: ???
+      n1: 72704 0xFFF000195: ???
+       n0: 72704 0xFFF00019D: ???
+ n1: 65535 0x4E4F57B: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+  n1: 65535 0x4E4EC5F: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+   n1: 65535 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+    n1: 65535 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 65535 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 31472 0x10CCB4: __gnu_cxx::new_allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 31472 0x10C6CA: std::allocator_traits<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::allocate(std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> >&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 31472 0x10CB6A: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 31472 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 31472 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 31472 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 31472 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 31472 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 31472 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 31472 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+           n1: 31472 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+            n1: 31472 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n0: 31472 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 21199 0x10C55C: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n2: 21199 0x519116D: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n1: 21199 0x10D2EB: std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>::pair(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 21199 0x10D348: void __gnu_cxx::new_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 21199 0x10D184: void std::allocator_traits<std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::construct<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 21199 0x10CBEA: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 21199 0x10C685: std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::operator()<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) const (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 21199 0x10BE49: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 21199 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 21199 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 21199 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 21199 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 21199 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 21199 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 21199 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 21199 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 16384 0x515CA96: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+  n1: 16384 0x5160AA0: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+   n2: 16384 0x5160C9E: std::basic_ofstream<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.22)
+    n1: 8192 0x10A90F: PCounter::view_map(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 8192 0x10ABEB: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 8192 0x10A936: PCounter::view_map(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n0: 8192 0x10ABEB: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 6584 0x10D500: __gnu_cxx::new_allocator<std::__detail::_Hash_node_base*>::allocate(unsigned long, void const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+  n1: 6584 0x10D4BD: std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n1: 6584 0x10D42E: std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+    n1: 6584 0x10D217: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_allocate_buckets(unsigned long) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+     n1: 6584 0x10CE69: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+      n1: 6584 0x10C7DD: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+       n1: 6584 0x10C0EF: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true>*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n1: 6584 0x10BE69: std::pair<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, true> > > const&, std::integral_constant<bool, true>) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+         n1: 6584 0x10B8D0: std::__detail::_Insert_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+          n1: 6584 0x10B59F: std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> > >::insert(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, int> const&) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+           n1: 6584 0x10A5D6: PCounter::packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+            n1: 6584 0x10A0ED: global_packet_handler(unsigned char*, pcap_pkthdr const*, unsigned char const*) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+             n1: 6584 0x4E4EAAB: ??? (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+              n1: 6584 0x4E3E23D: pcap_loop (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+               n1: 6584 0x10A840: PCounter::process_packets() (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+                n0: 6584 0x10ABD2: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+ n1: 5120 0x5974A60: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x5982A74: _IO_doallocbuf (genops.c:398)
+   n1: 4096 0x5980BE2: _IO_file_xsgetn (fileops.c:1383)
+    n1: 4096 0x5975AD7: fread (iofread.c:38)
+     n1: 4096 0x4E4EB98: pcap_fopen_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+      n1: 4096 0x4E4EDB6: pcap_open_offline_with_tstamp_precision (in /usr/lib/x86_64-linux-gnu/libpcap.so.1.8.1)
+       n1: 4096 0x10A7B1: PCounter::open_offline(char**) (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+        n0: 4096 0x10ABC3: main (in /home/shubhankar/MachineLearning/Winter@MSR/Assignment/TaskOne/a.out)
+   n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n0: 2296 in 4 places, all below massif's threshold (1.00%)
