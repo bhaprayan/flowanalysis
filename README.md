@@ -66,7 +66,7 @@ ms_print massif.out.pid | head -n 35
 
 ## Results
 The following are preliminary results when the two variants are tested using a sample packet dump file (LBL dataset)
-![MIPS vs Memory for First Variant (Vanilla Hash Map)](https://raw.github.com/bhaprayan/PacketFlowAnalysis/assets/img/TaskOne_LBL_Profiling.png)
+![MIPS vs Memory for First Variant (Vanilla Hash Map)](https://raw.githubusercontent.com/bhaprayan/PacketFlowAnalysis/master/assets/img/TaskOne_LBL_Profiling.png)
 
 ## Future Work
 1. Generate a frequency distribution plot for flow counts using HIST_FILE
