@@ -1,4 +1,4 @@
-# Microsoft Research India Assignment
+# Probablistic Algorithm for TCP/UDP Packet Flow Analysis 
 
 Implementation of algorithms for packet flow analysis (limited to TCP and UDP flows).
 Contains two variants of a program to compute the packet count:
